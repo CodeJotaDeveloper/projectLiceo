@@ -1,0 +1,2474 @@
+{
+	"info": {
+		"_postman_id": "14f155f3-7951-4a7f-a755-f707acc86779",
+		"name": "ProyectoFinalLiceoLaVirgen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25292601"
+	},
+	"item": [
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "contact",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDcxNTE4ZDgwZDYzOWVkOGZlOGI4NCIsImlhdCI6MTY4MjkwMjIxNSwiZXhwIjoxNjgyOTg4NjE1fQ.-pJEy8Y8mChsarUaDc9thBX9JTWlCEHAGAySsPfPPBg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Yessica\",\r\n    \"primerApellido\": \"Montero\",\r\n    \"segundoApellido\": \"Arriola\",\r\n    \"email\": \"yessicamontero@gmail.com\",\r\n    \"phone\": 60301545,\r\n    \"request\": \"Certificado\" \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/contacts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contact get ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjE2M2ZjNWQ0YWMzNzVkODM3Y2Y3NCIsImlhdCI6MTY4NDEwODU0MywiZXhwIjoxNjg0MTk0OTQzfQ.BU2BVae2zALUhlxepkwytGUMunG5CRkQ-PohWPT82Oo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Yessica\",\r\n    \"primerApellido\": \"Montero\",\r\n    \"segundoApellido\": \"Arriola\",\r\n    \"email\": \"yessicamontero@gmail.com\",\r\n    \"phone\": 60301545,\r\n    \"request\": \"Certificado\" \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/contacts/646174bc28939c995637644e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"contacts",
+								"646174bc28939c995637644e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar contact",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0MDVmNmRmZmIwNDJiYWExMDQzNSIsImlhdCI6MTY4MjI2MjA0MSwiZXhwIjoxNjgyMzQ4NDQxfQ.YkCKuctmN6lpocXg_I3kuDcTHEzksiddJ35XiJvwWYA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"Nuevo\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/contacts/64455d0968bb59a3ce3e21b8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"contacts",
+								"64455d0968bb59a3ce3e21b8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar estado contacto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0MDVmNmRmZmIwNDJiYWExMDQzNSIsImlhdCI6MTY4MjI2MjA0MSwiZXhwIjoxNjgyMzQ4NDQxfQ.YkCKuctmN6lpocXg_I3kuDcTHEzksiddJ35XiJvwWYA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"Rechazado\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/contacts/update/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"contacts",
+								"update",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contact",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \r\n    \"name\": \"\",\r\n    \"primerApellido\": \"Villalobos\",\r\n    \"segundoApellido\": \"Corrales\",\r\n    \"email\": \"luis@gmail.com\",\r\n    \"phone\": \"85086175\" ,\r\n    \"request\": \"Constancia\",\r\n    \"cedula\":\"6765\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/contacts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar contacto",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0MDVmNmRmZmIwNDJiYWExMDQzNSIsImlhdCI6MTY4MTE2Njg1NSwiZXhwIjoxNjgxMjUzMjU1fQ.-GyeQkVXUnHmT65nPe9GDYr_aXuzqj67rxcsRV3F4VA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \r\n    \"name\": \"Jorge\",\r\n    \"primerApellido\": \"Villalobos\",\r\n    \"segundoApellido\": \"Corrales\",\r\n    \"email\": \"jvilla252gmail.com\",\r\n    \"phone\": 85086175 ,\r\n    \"request\": \"Constancia\",\r\n    \"cedula\":\"207630355\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/contacts/642c50c3130accb7336d7048",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"contacts",
+								"642c50c3130accb7336d7048"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NewPost",
+			"item": [
+				{
+					"name": "NewPost",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTI5NGI0N2U1YWY4M2NmOTY1ZTM2OCIsImlhdCI6MTY4MzIxMTMxOCwiZXhwIjoxNjgzMjk3NzE4fQ.t_yk7eWUvOuOFtbT5lC4kJ8ox7sKHQllGgH__ic_Xk0",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/newPost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"newPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Subir Imagen",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTI5NGI0N2U1YWY4M2NmOTY1ZTM2OCIsImlhdCI6MTY4MzIxMTMxOCwiZXhwIjoxNjgzMjk3NzE4fQ.t_yk7eWUvOuOFtbT5lC4kJ8ox7sKHQllGgH__ic_Xk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/newPost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"newPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NewPost/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0MDVmNmRmZmIwNDJiYWExMDQzNSIsImlhdCI6MTY4MDk3NTM4NywiZXhwIjoxNjgxMDYxNzg3fQ.9S6-nBORhUUkthgEP5gSQP7tnmmfCcc6AwHWYjd1P78",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Batalla de Rivas\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/newPost/6430505504aa528e1aa52e50",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"newPost",
+								"6430505504aa528e1aa52e50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NewPost/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDcxNTE4ZDgwZDYzOWVkOGZlOGI4NCIsImlhdCI6MTY4Mjg3MjM3MCwiZXhwIjoxNjgyOTU4NzcwfQ.ykRttRcqII7OnQql49fBLfmhOK1-9-jr8g8LOiBJ8TE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Despedica de clases\",\r\n    \"description\": \"Felices vacaciones estudiantes\",\r\n    \"postImag\": \"Son los mejores\",\r\n    \"category\": \"2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/newPost/644722b2d80d639ed8fe8c6c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"newPost",
+								"644722b2d80d639ed8fe8c6c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Inicio a clases\",\r\n    \"description\": \"Bienvenidos estudiantes\",\r\n    \"postImag\": \"Son los mejores\",\r\n    \"category\": \"2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/newPost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"newPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Inicio a clases\",\r\n    \"description\": \"Bienvenidos estudiantes\",\r\n    \"postImag\": \"Son los mejores\",\r\n    \"category\": \"2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/newPost/640fa392828e82f089e033b1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"newPost",
+								"640fa392828e82f089e033b1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prematricula",
+			"item": [
+				{
+					"name": "prematricula",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NGY1YjQxOTEyMDA0NGI4Y2Q2YWM5YSIsImlhdCI6MTY4Mjk2MzA5OCwiZXhwIjoxNjgzMDQ5NDk4fQ.akt-SsIHWfBD2d9bb0pL1XkznriX8SlBvkmch1pPWrE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NameStudent\":\"\",\r\n    \"Primer_Apellido_Student\":\"\",\r\n    \"Segundo_Apellido_Student\":\"\",\r\n    \"fecha_nacimiento_iso\":\"\",\r\n    \"Cedula_Student\":\"\",\r\n    \"cedStudentPhoto\":\"\",\r\n    \"Gender_Student\":\"\",\r\n    \"Nacionalidad_Student\":\"\",\r\n     \"Institucion_Procedencia_Student\":\"\",\r\n     \"Name_Legal_Manager\":\"\",\r\n     \"Primer_Apellido_Legal_Manager\":\"\",\r\n     \"Segundo_Apellido_Legal_Manager\":\"\",\r\n     \"Number_Phone_Legal_Manager\":\"\",\r\n     \"Email_Legal_Manager\":\"\",\r\n     \"Ocupacion_Legal_Manager\":\"\",\r\n     \"Cedula_Legal_Manager\":\"\",\r\n     \"cedManagerPhoto\":\"\",\r\n     \"Gender_Legal_Manager\":\"\",\r\n     \"Nacionalidad_Legal_Manager\":\"\",\r\n     \"Relationship_Legal_Manager\":\"\",\r\n     \"Address_Legal_Manager\":\"\",\r\n     \"fecha_nacimiento_Legal_Manager_iso\":\"\",\r\n     \"username\":\"\"\r\n   \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/prematricula",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"prematricula"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "prematricula Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzM4NzdhZTVjMzUyMDQ0MDcyNzEzZCIsImlhdCI6MTY4MTY3ODA2NywiZXhwIjoxNjgxNzY0NDY3fQ.2G4CxKymS7fytSIAB05_GBtDfwI_-QJMFt3-zR4j-Fo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "estudiantefrontal",
+									"type": "file",
+									"src": "/C:/Users/Jorge Villalobos/Pictures/Screenshots/Captura de pantalla (22).png"
+								},
+								{
+									"key": "estudiantedorsal",
+									"type": "file",
+									"src": "/C:/Users/Jorge Villalobos/Pictures/Screenshots/Captura de pantalla (24).png"
+								},
+								{
+									"key": "encargadodorsal",
+									"type": "file",
+									"src": "/C:/Users/Jorge Villalobos/Pictures/Screenshots/Captura de pantalla (26).png"
+								},
+								{
+									"key": "encargadofrontal",
+									"type": "file",
+									"src": "/C:/Users/Jorge Villalobos/Pictures/Screenshots/Captura de pantalla (23).png"
+								},
+								{
+									"key": "NameStudent",
+									"value": "HJHJ",
+									"type": "text"
+								},
+								{
+									"key": "Primer_Apellido_Student",
+									"value": "Rojas",
+									"type": "text"
+								},
+								{
+									"key": "Segundo_Apellido_Student",
+									"value": "Castro",
+									"type": "text"
+								},
+								{
+									"key": "fecha_nacimiento_iso",
+									"value": "08/12/2007",
+									"type": "text"
+								},
+								{
+									"key": "Cedula_Student",
+									"value": "145",
+									"type": "text"
+								},
+								{
+									"key": "Gender_Student",
+									"value": "Masculino",
+									"type": "text"
+								},
+								{
+									"key": "Nacionalidad_Student",
+									"value": "Costarricense",
+									"type": "text"
+								},
+								{
+									"key": "Institucion_Procedencia_Student",
+									"value": "Escuela La Guaria",
+									"type": "text"
+								},
+								{
+									"key": "Name_Legal_Manager",
+									"value": "Melissa",
+									"type": "text"
+								},
+								{
+									"key": "Primer_Apellido_Legal_Manager",
+									"value": "Brenes",
+									"type": "text"
+								},
+								{
+									"key": "Segundo_Apellido_Legal_Manager",
+									"value": "Castro",
+									"type": "text"
+								},
+								{
+									"key": "Number_Phone_Legal_Manager",
+									"value": "85451256",
+									"type": "text"
+								},
+								{
+									"key": "Email_Legal_Manager",
+									"value": "luisq@gmal.com",
+									"type": "text"
+								},
+								{
+									"key": "Cedula_Legal_Manager",
+									"value": "6006580457",
+									"type": "text"
+								},
+								{
+									"key": "Ocupacion_Legal_Manager",
+									"value": "Chofer",
+									"type": "text"
+								},
+								{
+									"key": "Gender_Legal_Manager",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "Nacionalidad_Legal_Manager",
+									"value": "Costarricense",
+									"type": "text"
+								},
+								{
+									"key": "Relationship_Legal_Manager",
+									"value": "Encargado Legal",
+									"type": "text"
+								},
+								{
+									"key": "fecha_nacimiento_Legal_Manager_iso",
+									"value": "05/06/1990",
+									"type": "text"
+								},
+								{
+									"key": "Address_Legal_Manager",
+									"value": "La Virgen",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "Luis",
+									"type": "text"
+								},
+								{
+									"key": "reciboDireccion",
+									"type": "file",
+									"src": "/C:/Users/Jorge Villalobos/Pictures/Screenshots/Captura de pantalla (22).png"
+								},
+								{
+									"key": "poliza",
+									"type": "file",
+									"src": "/C:/Users/Jorge Villalobos/Pictures/Screenshots/Captura de pantalla (23).png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/prematricula",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"prematricula"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "prematricula",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjE2M2ZjNWQ0YWMzNzVkODM3Y2Y3NCIsImlhdCI6MTY4NDEwNzkyOCwiZXhwIjoxNjg0MTk0MzI4fQ.JNbph1-L9j0Y4WkLcosQjlzgg8a9zkdIsVIRRJjfqnA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4600/api/prematricula",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"prematricula"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get prematricula ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-accesss-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjE2M2ZjNWQ0YWMzNzVkODM3Y2Y3NCIsImlhdCI6MTY4NDEwODU0MywiZXhwIjoxNjg0MTk0OTQzfQ.BU2BVae2zALUhlxepkwytGUMunG5CRkQ-PohWPT82Oo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4600/api/prematricula/64616250dffbc8790980fcc1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"prematricula",
+								"64616250dffbc8790980fcc1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get prematricula estudiante matriculado por usuario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-accesss-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTUyNzQ4YTc5ZDU5NjRiNWRlZjY1YyIsImlhdCI6MTY4MzQ3NzQ3NSwiZXhwIjoxNjgzNTYzODc1fQ.2659SoobVzHcbr2fA2IN4XvgzNPGEMN4OaRQdMO21q0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/prematricula/estudiante/304560585",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"prematricula",
+								"estudiante",
+								"304560585"
+							],
+							"query": [
+								{
+									"key": "Cedula",
+									"value": "301560478",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get voucher estudiante prematriculado por encargado legal",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-accesss-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTUyNzQ4YTc5ZDU5NjRiNWRlZjY1YyIsImlhdCI6MTY4MzQ3NzQ3NSwiZXhwIjoxNjgzNTYzODc1fQ.2659SoobVzHcbr2fA2IN4XvgzNPGEMN4OaRQdMO21q0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/prematricula/voucherprematriculaestudiante/601540478",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"prematricula",
+								"voucherprematriculaestudiante",
+								"601540478"
+							],
+							"query": [
+								{
+									"key": "Cedula",
+									"value": "301560478",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get estudiante prematriculado por encargado legal",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-accesss-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTUyNzQ4YTc5ZDU5NjRiNWRlZjY1YyIsImlhdCI6MTY4MzQ3NzQ3NSwiZXhwIjoxNjgzNTYzODc1fQ.2659SoobVzHcbr2fA2IN4XvgzNPGEMN4OaRQdMO21q0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/prematricula/voucherprematriculaestudiante/601540478",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"prematricula",
+								"voucherprematriculaestudiante",
+								"601540478"
+							],
+							"query": [
+								{
+									"key": "Cedula",
+									"value": "301560478",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update prematricula ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzFhOTEwZTZhMGEwMmYzOWFiOTJiMSIsImlhdCI6MTY4MDk3NjIxNCwiZXhwIjoxNjgxMDYyNjE0fQ.U5yEBmULLQQ9UK9ZxmboN2vv7DtY84IW5iQEsqoBpQ4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Period\": 2021\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/prematricula/642c58b2cd02124b2a0491fb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"prematricula",
+								"642c58b2cd02124b2a0491fb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update estado prematricula ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0MDVmNmRmZmIwNDJiYWExMDQzNSIsImlhdCI6MTY4MTk3MDE2OCwiZXhwIjoxNjgyMDU2NTY4fQ.EDVJ7XihM55Oqu6RkkO79Tqq_Zh0FbNpudkrtAqiG2Y",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"estadoPrematricula\": \"Rechazado\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/prematricula/estado/6440d1b55ac0622aba30654e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"prematricula",
+								"estado",
+								"6440d1b55ac0622aba30654e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete prematricula ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NameStudent\": \"Maria\",\r\n    \"Primer_Apellido_Student\": \"Fallas\",\r\n    \"Segundo_Apellido_Student\": \"brenes\",\r\n    \"fecha_nacimiento_iso\": \"15/12/2000\",\r\n    \"Cedula_Student\": \"3022458412\",\r\n    \"Gender_Student\": \"Male\",\r\n    \"Nacionalidad_Student\": \"Costarricense\",\r\n    \"Institucion_Procedencia_Student\": \"Colegio Puerto Viejo\",\r\n    \"Name_Legal_Manager\": \"Ana\",\r\n    \"Primer_Apellido_Legal_Manager\": \"Villalobos\",\r\n    \"Segundo_Apellido_Legal_Manager\": \"Brenes\",\r\n    \"Number_Phone_Legal_Manager\": \"74125689\",\r\n    \"Email_Legal_Manager\": \"conejo@gmail.com\",\r\n    \"Ocupacion_Legal_Manager\": \"Costurera\",\r\n    \"Cedula_Legal_Manager\": \"205070472\",\r\n    \"Gender_Legal_Manager\": \"Female\",\r\n     \"Nacionalidad_Legal_Manager\": \"Costarricense\",\r\n    \"Relationship_Legal_Manager\": \"Madre\",\r\n    \"Address_Legal_Manager\" :\"Cristo Rey\",\r\n     \"username\" :\"Cesar\"\r\n  \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/prematricula/63e66c1424bbf3ed423bc906",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"prematricula",
+								"63e66c1424bbf3ed423bc906"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "/api/auth/signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Marlon\",\r\n    \"email\": \"    ruiz.soto.marlon@mep.go.cr \",\r\n    \"password\": \"1234\"\r\n   \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/auth/signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"lic.lavirgen@mep.go.cr\",\r\n    \"password\": \"1234\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/auth/signout",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTA5ODlhNjQ5YjNiYzZhMjJmOTYwOSIsImlhdCI6MTY4MzEyNTQ2MiwiZXhwIjoxNjgzMjExODYyfQ.yKIM-RdcIpmx_rbXZU8wJdgDf9LXRUYvUzoyMLf9iN4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"lic.lavirgen@mep.go.cr\"\r\n   \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/auth/signout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"auth",
+								"signout"
+							],
+							"query": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"disabled": true
+								},
+								{
+									"key": "x-access-token",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "Administrador o Root",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0MDVmNmRmZmIwNDJiYWExMDQzNSIsImlhdCI6MTY4MTE3NTY1NCwiZXhwIjoxNjgxMjYyMDU0fQ.sfzYxmbNdXBdVIoCAZAhSbuerRJhciRk54_Hhrg5Flw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Ramiro\",\r\n    \"email\": \"ramiro@gmail.com\",\r\n    \"password\": \"1111\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserbyID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDcxNTE4ZDgwZDYzOWVkOGZlOGI4NCIsImlhdCI6MTY4MjUyMzQwNSwiZXhwIjoxNjgyNjA5ODA1fQ.OWD7xuGft6P38WsXRn_8LPcANaGW4aL-71yM1X-djek",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Katty\",\r\n    \"email\": \"katty@gmail.com\",\r\n    \"roles\": [ \"Administrador\"]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/users/6431a36866f51c65a0e53f95",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"users",
+								"6431a36866f51c65a0e53f95"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUserbyID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0MDVmNmRmZmIwNDJiYWExMDQzNSIsImlhdCI6MTY4MjAxMTQxOSwiZXhwIjoxNjgyMDk3ODE5fQ.cSRywR45msF-0Q9sx3hc2PRYGQVWb5OxkHcuWlMvbig",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n \r\n    \"password\": \"1111\"\r\n    \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/user/6430405f6dffb042baa10435",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"user",
+								"6430405f6dffb042baa10435"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pruebas",
+			"item": [
+				{
+					"name": "admintrador",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/administrador/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"administrador",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Eventos",
+			"item": [
+				{
+					"name": "Evento Subir Imagen Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTI5NGI0N2U1YWY4M2NmOTY1ZTM2OCIsImlhdCI6MTY4MzMwMDUwMywiZXhwIjoxNjgzMzg2OTAzfQ.UIRl8Crj1Df0FoGEMf9dqLWBfLbHvrRXzmEiNtzMCbE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Evento 1",
+									"type": "text"
+								},
+								{
+									"key": "organizacion",
+									"value": "Evento 1",
+									"type": "text"
+								},
+								{
+									"key": "lugar",
+									"value": "Evento 1",
+									"type": "text"
+								},
+								{
+									"key": "fecha",
+									"value": "ggf",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "jyt",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Jorge Villalobos/Pictures/Screenshots/Captura de pantalla (14).png"
+								},
+								{
+									"key": "username",
+									"value": "jtyj",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/eventos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"eventos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Evento",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0OWZiMTNmY2M3NDk3OGZkYTc4ZCIsImlhdCI6MTY4MDk3MjAyNiwiZXhwIjoxNjgxMDU4NDI2fQ.VqtrB-Q4W214dgbTLKLn6rDF8hJ31pfGs4jikX_5org",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"title\": \"Mono \",\r\n     \"organizacion\": \"Selva verde\",\r\n     \"lugar\": \"La Virgen\",\r\n      \"description\": \"Actividad\",\r\n    \"eventImag\": \"Imagen Evento\",\r\n      \"fecha\": \"08 de febrero del 2023\",\r\n      \"username\": \"Yendry\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/eventos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"eventos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Evento",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"title\": \"Suspender lecciones\",\r\n     \"organizacion\": \"Direccion\",\r\n     \"lugar\": \"La Virgen\",\r\n      \"description\": \"Salen temprano 3:10pm\",\r\n      \"postImag\": \"Fuga\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/eventos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"eventos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Evento ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"title\": \"Suspender lecciones\",\r\n     \"organizacion\": \"Direccion\",\r\n     \"lugar\": \"La Virgen\",\r\n      \"description\": \"Salen temprano 3:10pm\",\r\n      \"postImag\": \"Fuga\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/eventos/63e3d547f0f68e535c81dbe6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"eventos",
+								"63e3d547f0f68e535c81dbe6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualiza Evento ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0OWZiMTNmY2M3NDk3OGZkYTc4ZCIsImlhdCI6MTY4MDk3MjAyNiwiZXhwIjoxNjgxMDU4NDI2fQ.VqtrB-Q4W214dgbTLKLn6rDF8hJ31pfGs4jikX_5org",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \r\n     \"lugar\": \"Chilamate\"\r\n    \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/eventos/6431948f5f40cf5e646cab85",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"eventos",
+								"6431948f5f40cf5e646cab85"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Evento ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0OWZiMTNmY2M3NDk3OGZkYTc4ZCIsImlhdCI6MTY4MDk3MjAyNiwiZXhwIjoxNjgxMDU4NDI2fQ.VqtrB-Q4W214dgbTLKLn6rDF8hJ31pfGs4jikX_5org",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"title\": \"Febrero\",\r\n     \"organizacion\": \"San valentin\"\r\n     \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/eventos/643186e8500a28f23e50987d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"eventos",
+								"643186e8500a28f23e50987d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Circulares",
+			"item": [
+				{
+					"name": "Crear circular",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTI5NGI0N2U1YWY4M2NmOTY1ZTM2OCIsImlhdCI6MTY4MzIxMTMxOCwiZXhwIjoxNjgzMjk3NzE4fQ.t_yk7eWUvOuOFtbT5lC4kJ8ox7sKHQllGgH__ic_Xk0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "jty",
+									"type": "text"
+								},
+								{
+									"key": "consecutivoCircular",
+									"value": "tyj",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "tyj",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "username",
+									"value": "yjt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/circulares/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"circulares",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar circular",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0OWZiMTNmY2M3NDk3OGZkYTc4ZCIsImlhdCI6MTY4MDk3MjAyNiwiZXhwIjoxNjgxMDU4NDI2fQ.VqtrB-Q4W214dgbTLKLn6rDF8hJ31pfGs4jikX_5org",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"title\": \"DIC-001\"\r\n     \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/circulares/643193a7df6358f80180b975",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"circulares",
+								"643193a7df6358f80180b975"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener circular",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"title\": \"Suspender lecciones\",\r\n     \"organizacion\": \"Direccion\",\r\n     \"lugar\": \"La Virgen\",\r\n      \"description\": \"Salen temprano 3:10pm\",\r\n      \"postImag\": \"Fuga\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/circulares/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"circulares",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener circular ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"title\": \"Suspender lecciones\",\r\n     \"organizacion\": \"Direccion\",\r\n     \"lugar\": \"La Virgen\",\r\n      \"description\": \"Salen temprano 3:10pm\",\r\n      \"postImag\": \"Fuga\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/circulares/63e51e879fd14618394ceaca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"circulares",
+								"63e51e879fd14618394ceaca"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar circular ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0OWZiMTNmY2M3NDk3OGZkYTc4ZCIsImlhdCI6MTY4MDk3MjAyNiwiZXhwIjoxNjgxMDU4NDI2fQ.VqtrB-Q4W214dgbTLKLn6rDF8hJ31pfGs4jikX_5org",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"title\": \"Suspender lecciones\",\r\n     \"organizacion\": \"Direccion\",\r\n     \"lugar\": \"La Virgen\",\r\n      \"description\": \"Salen temprano 3:10pm\",\r\n      \"postImag\": \"Fuga\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/circulares/64319916b8fc8cf6dded22b3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"circulares",
+								"64319916b8fc8cf6dded22b3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Subir Imagen Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Arroz",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Aceite",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Jorge Villalobos/Pictures/Screenshots/Captura de pantalla (20).png"
+								},
+								{
+									"key": "consecutivoCircular",
+									"value": "tgre",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "rher",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/circulares",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"circulares"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "DatosUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4700/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4700",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ROOT",
+			"item": [
+				{
+					"name": "ActualizarRolUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0MDVmNmRmZmIwNDJiYWExMDQzNSIsImlhdCI6MTY4MTc4NDExOSwiZXhwIjoxNjgxODcwNTE5fQ.0gUgXYfyfqtfyGLiBO8bUNgc_dYidBkc0b4rBY6x2YU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameRole\": \"Estudiante\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/root/6431a36866f51c65a0e53f95",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"root",
+								"6431a36866f51c65a0e53f95"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TodoLosUsuarios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTAxYTUzMGM5Zjc2MzEyMTc1ZTc4YyIsImlhdCI6MTY4Mjk4NTg0OCwiZXhwIjoxNjgzMDcyMjQ4fQ.1Bjp4X1MY2f57YWJy2MHpH_Lm2St2rF1RRs6jZ6NaiM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios por ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDcxNTE4ZDgwZDYzOWVkOGZlOGI4NCIsImlhdCI6MTY4MjUyMzQwNSwiZXhwIjoxNjgyNjA5ODA1fQ.OWD7xuGft6P38WsXRn_8LPcANaGW4aL-71yM1X-djek",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/root/traerusuarioid/64471518d80d639ed8fe8b84",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"root",
+								"traerusuarioid",
+								"64471518d80d639ed8fe8b84"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarUsuarioPorRoot",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0MDVmNmRmZmIwNDJiYWExMDQzNSIsImlhdCI6MTY4MTE3MTkyNSwiZXhwIjoxNjgxMjU4MzI1fQ.XiWQD3RjLmHTo1sWu_76ko4fB3eChlKI2rT8wKOCkx8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameRole\":\"Encargado Legal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/root/6431a1d466f51c65a0e53f81",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"root",
+								"6431a1d466f51c65a0e53f81"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarRolUsuarioPorRot",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDcxNTE4ZDgwZDYzOWVkOGZlOGI4NCIsImlhdCI6MTY4MjUyMzQwNSwiZXhwIjoxNjgyNjA5ODA1fQ.OWD7xuGft6P38WsXRn_8LPcANaGW4aL-71yM1X-djek",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameRol\":\"Administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/root/rol/644723c1d80d639ed8fe8cc5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"root",
+								"rol",
+								"644723c1d80d639ed8fe8cc5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar datos del usuario por el root",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzA0MDVmNmRmZmIwNDJiYWExMDQzNSIsImlhdCI6MTY4MjM1MTQwNSwiZXhwIjoxNjgyNDM3ODA1fQ.mel0yRK6PYpwGMNuVaYddOpv6xjzWuwRyg4SYPiCzbg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameRole\": \"Estudiante\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/root/actualizarusuario/6431a36866f51c65a0e53f95",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"root",
+								"actualizarusuario",
+								"6431a36866f51c65a0e53f95"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estado",
+			"item": [
+				{
+					"name": "traer estados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4600/api/estado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"estado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"lic2.lavirgen@mep.go.cr\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/reset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"reset"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traer estados Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user.email\": \"jvilla252@gmail.com\",\r\n    \"password\": \"1111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traer datos por correo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"gonzalo.guevara.barboza@mep.go.cr\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/reset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"reset"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teacher",
+			"item": [
+				{
+					"name": "traer estudiante encargado legal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://201.237.145.163:5000/api/legalguardians/:id/dependantStudents",
+							"protocol": "http",
+							"host": [
+								"201",
+								"237",
+								"145",
+								"163"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"legalguardians",
+								":id",
+								"dependantStudents"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ver ausencias del estudiante",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"firstDate\": \"2019-02-01 00:00:00\",\r\n        \"secondDate\": \"2019-07-01 00:00:00\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://201.237.145.163:5000/api/students/4-0258-0547/absences/list/BetweenDates?firstDate=2019-02-01 00:00:00&secondDate=2019-07-01 00:00:00",
+							"protocol": "http",
+							"host": [
+								"201",
+								"237",
+								"145",
+								"163"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"students",
+								"4-0258-0547",
+								"absences",
+								"list",
+								"BetweenDates"
+							],
+							"query": [
+								{
+									"key": "firstDate",
+									"value": "2019-02-01 00:00:00"
+								},
+								{
+									"key": "secondDate",
+									"value": "2019-07-01 00:00:00"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test ausencias",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"firstDate\": \"2019-02-01 00:00:00\",\r\n        \"secondDate\": \"2019-07-01 00:00:00\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://201.237.145.163:5000/api/students/4-0258-0547/absences/list/BetweenDates?firstDate=2019-02-01 00:00:00&secondDate=2019-07-01 00:00:00",
+							"protocol": "http",
+							"host": [
+								"201",
+								"237",
+								"145",
+								"163"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"students",
+								"4-0258-0547",
+								"absences",
+								"list",
+								"BetweenDates"
+							],
+							"query": [
+								{
+									"key": "firstDate",
+									"value": "2019-02-01 00:00:00"
+								},
+								{
+									"key": "secondDate",
+									"value": "2019-07-01 00:00:00"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ausencias",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"firstDate\": \"2019-02-01 00:00:00\",\r\n        \"secondDate\": \"2019-07-01 00:00:00\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/ausencias?id=4-0258-0547",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"ausencias"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4-0258-0547"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teacher Attendance",
+			"item": [
+				{
+					"name": "Guardar asistencia estudiante",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Cedula_Student\": \"207630355\",\r\n    \"NameStudent\": \"Mario\",\r\n    \"Primer_Apellido_Student\": \"Villalobos\",\r\n    \"Segundo_Apellido_Student\": \"Corrales\",\r\n    \"fecha\": \"13/05/2023\",\r\n    \"subject\": \"Ciencias\",\r\n    \"absence\":\"Ausencia Injustificada\",\r\n    \"cantidad\":\"1\",\r\n    \"emailTeacher\": \"jvilla252@gmail.com\",\r\n    \"emailLegalManager\": \"jvilla252@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4600/api/teacherattendance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"teacherattendance"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assistencia",
+			"item": [
+				{
+					"name": "http://localhost:4600/api/assistancestudent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4600/api/assistancestudent/4-0258-0547/2019-02-01 00:00:00/2019-07-01 00:00:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4600",
+							"path": [
+								"api",
+								"assistancestudent",
+								"4-0258-0547",
+								"2019-02-01 00:00:00",
+								"2019-07-01 00:00:00"
+							],
+							"query": [
+								{
+									"key": "firstDate",
+									"value": "12/02/2023",
+									"disabled": true
+								},
+								{
+									"key": "secondDate",
+									"value": "12/11/2023",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Encargado legal consulta asistencia del estudiante "
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

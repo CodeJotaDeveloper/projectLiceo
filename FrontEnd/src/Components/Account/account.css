@@ -1,0 +1,65 @@
+.boxAccount{
+  margin-top: 130px;
+  margin-bottom: 40px;
+}
+.titleAccount{
+  text-align: center;
+  color: #023e8a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.formAccount{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 550px;
+  padding: 40px;
+  background-color: #7fbffd;
+  border-radius: 10px;
+}
+.boxImg{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.boxImg > img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+} 
+.icon{
+  margin-left: 5px;
+  cursor:pointer
+}
+.boxInfo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.textlabel{
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.textInput{
+  font-size: 15px;
+  margin: 10px 0;
+  height: 30px;
+  border: none;
+  width: 300px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.buttonAccount{
+  width: 150px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #ced4da;;
+  color: black;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,46 @@
+footer{
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ced4da;
+}
+.boxLogos{
+  display: flex;
+  margin-left: 40px;
+}
+.logos{
+  height: 100px;
+  width: 100px;
+  margin-top: 10px;
+}
+.imagen{
+ max-width: 100%;
+ max-height: 100%;
+}
+.containerFooter{
+  max-width: 95%;
+  margin: auto;
+}
+.flexFooter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.textInfo{
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+.footerInfo{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 40px;
+}
+.copyright{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #adb5bd;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding-right: 10px;
+  text-align: center;
+}

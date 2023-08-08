@@ -1,0 +1,43 @@
+.conatinerEvents{
+    flex: 10;
+}
+.boxWriteEvents{
+    padding: 60px;
+    text-align: center;
+}
+.titleEvents{
+   color:#023e8a;; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.formEvent{
+  padding-right: 40px;
+   margin: auto;
+   width: 600px;
+   height: 800px;
+   border-radius: 10px;
+   background-color: #7fbffd;
+}
+.titlewrite, .descwrite{
+   margin-top: 10px;
+   margin-left: 5px;
+   color: black; 
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+}
+.writesumbit{
+    background-color: #ced4da;
+    color:#023e8a;
+    margin-top: 10px ;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.textLabelDes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-left: 45px;
+}

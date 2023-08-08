@@ -1,0 +1,75 @@
+.contentVoucher{
+    padding-top: 130px;
+}
+.headerLiceo{
+    display: flex;
+    justify-content: space-around;
+}
+.logoComp{
+    width: 90px;
+    height: 90px;
+}
+.textComp{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.textVoucher{
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #023e8a;
+}
+.titleVoucher{
+    color: #023e8a;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 5px;
+}
+.titleVoucherD{
+    color: #023e8a;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.boxVoucher{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.columVoucher{
+    width: 25%;
+    text-align: justify;
+    margin: 0 auto;
+    padding-left: 60px;
+}
+.ButtonVoucher{
+    display:flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.btnVoucher{
+    margin-left: 10px;
+    border: none;
+}
+.btnVoucher:nth-child(1){
+    background-color: #6c757d;
+}
+.btnVoucher:nth-child(2){
+    background-color: #6c757d;
+}
+.btnVoucher{
+    background-color: #6c757d;
+    color: white;
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+}
+.updateTex{
+    display: flex;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+}

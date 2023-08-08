@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formContact {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 140px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registre-box {
+  background-color: #7fbffd;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.textContact {
+  display: block;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  font-size: 20px;
+}
+
+.secondTitle,
+.labelContact {
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.button-contact {
+  background-color: #ced4da;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.boxcontacto{
+  padding-top: 120px;
+}

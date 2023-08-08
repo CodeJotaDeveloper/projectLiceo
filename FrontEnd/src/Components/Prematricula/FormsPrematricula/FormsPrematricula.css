@@ -1,0 +1,99 @@
+.containerForms{
+    flex: 10;
+    padding-top: 140px;
+}
+.boxForms{
+    padding: 40px;
+}
+.textFormsPre{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0077b6;
+}
+.boxdate{
+   margin-top: 10px;
+   margin-bottom: 15px;
+}
+.boxID{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.boxSelect{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.labelTexts{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.formStudent{
+    padding: 20px;
+    margin: auto;
+    width: 850px;
+    border-radius: 10px;
+    background-color: #55a630;
+}
+.dateStudent{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    margin: 15px 5px 15px 5px;
+}
+.textdate{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fad643;
+    font-size: 30px;
+}
+.listOptions{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.mapParent{
+    width: 800px;
+    height: 100px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Presumbit{
+    background-color: #ffe246;
+    border: none;
+    color: black;
+    width: 90px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.buttonpre{
+    display: flex;
+    justify-content: end;
+}
+.Presumbit:hover{
+    background-color: #55a630;
+    color: white;
+}
+.textAdd{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.iconPrem{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.textID{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

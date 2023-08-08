@@ -1,0 +1,224 @@
+{
+	"ausencias": [
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Química",
+            "date": "2019-02-15T06:00:00.000Z",
+            "typeId": 0,
+            "type": "LLEGADA TARDÍA",
+            "amount": 1
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Español",
+            "date": "2019-02-13T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 2
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Español",
+            "date": "2019-02-19T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 2
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Química",
+            "date": "2019-04-05T06:00:00.000Z",
+            "typeId": 1,
+            "type": "AUSENCIA JUSTIFICADA",
+            "amount": 1
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Estudios Sociales",
+            "date": "2019-04-05T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 1
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Francés Ed. Diversificada",
+            "date": "2019-03-27T06:00:00.000Z",
+            "typeId": 0,
+            "type": "LLEGADA TARDÍA",
+            "amount": 1
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Francés Ed. Diversificada",
+            "date": "2019-04-02T06:00:00.000Z",
+            "typeId": 0,
+            "type": "LLEGADA TARDÍA",
+            "amount": 1
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Matemática",
+            "date": "2019-03-21T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 1
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Matemática",
+            "date": "2019-05-02T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 2
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Matemática",
+            "date": "2019-04-25T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 3
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Psicología",
+            "date": "2019-04-25T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 3
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "TEC. INFORM. Y COMUNIC.",
+            "date": "2019-05-13T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 4
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Estudios Sociales",
+            "date": "2019-05-31T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 1
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Física",
+            "date": "2019-06-19T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 1
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Física",
+            "date": "2019-06-12T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 3
+        },
+        {
+            "id": "4-0258-0547",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Psicología",
+            "date": "2019-06-20T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 3
+        },
+        {
+            "id": "1-1829-0661",
+            "name": "ERICKA ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Química",
+            "date": "2019-02-15T06:00:00.000Z",
+            "typeId": 0,
+            "type": "LLEGADA TARDÍA",
+            "amount": 1
+        },
+        {
+            "id": "1-1829-0661",
+            "name": "ERICKA ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Español",
+            "date": "2019-02-13T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 2
+        },
+        {
+            "id": "1-1829-0441",
+            "name": "David ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Español",
+            "date": "2019-02-19T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 2
+        },
+        {
+            "id": "1-1829-0441",
+            "name": "David ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Química",
+            "date": "2019-04-05T06:00:00.000Z",
+            "typeId": 1,
+            "type": "AUSENCIA JUSTIFICADA",
+            "amount": 1
+        },
+        {
+            "id": "1-1829-0441",
+            "name": "David ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Estudios Sociales",
+            "date": "2019-04-05T06:00:00.000Z",
+            "typeId": 2,
+            "type": "AUSENCIA INJUSTIFICADA",
+            "amount": 1
+        },
+        {
+            "id": "1-1829-0441",
+            "name": "BRYAN ANDREY MARIN HERRA",
+            "group": "10-1",
+            "subject": "Francés Ed. Diversificada",
+            "date": "2019-03-27T06:00:00.000Z",
+            "typeId": 0,
+            "type": "LLEGADA TARDÍA",
+            "amount": 1
+        }
+    ]
+}

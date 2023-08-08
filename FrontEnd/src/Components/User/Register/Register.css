@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formRegistre {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 140px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registre-box {
+  background-color: #7fbffd;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.RegistreTEXT {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.textRegistre {
+  display: block;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  font-size: 20px;
+}
+.error {
+  color: red;
+}
+.button-registre {
+  background-color: #ced4da;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.boxAcces {
+  margin: 5px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gold;
+  cursor: pointer;
+}
+.toast {
+  transition-duration: 0.3s;
+  background-color: #1565c0;
+  border-radius: 4px;
+  width: 30%;
+  text-align: center;
+  position: absolute;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.linkpassword{
+  padding-top: 7px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.textLabel{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
